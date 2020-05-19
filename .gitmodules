@@ -1,0 +1,9 @@
+[submodule "container-app"]
+	path = container-app
+	url = /container-app/
+[submodule "todo-store"]
+	path = todo-store
+	url = /todo-store/
+[submodule "wc-child"]
+	path = wc-child
+	url = /wc-child/

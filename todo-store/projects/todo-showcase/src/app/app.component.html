@@ -1,0 +1,13 @@
+{{titi}}
+<form  [formGroup]="friendForm">
+    <input type="text" formControlName="name" />
+    <input type="number" formControlName="age" />
+    <button (click)="AddFriend()">send fiend</button>
+</form>
+
+<ul class="customers">
+    <li *ngFor="let friend of friends | async; let i=index">
+        <div (click)="removeFriend(i)" >{{i+1}}.</div> {{friend.name}}
+    </li>
+</ul>
+

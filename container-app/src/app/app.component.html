@@ -1,0 +1,26 @@
+<div class="container-wrap">
+    <h2 class="title">
+        this is my title
+    </h2>
+    <div class="content">
+        <form  [formGroup]="friendForm">
+            <input type="text" formControlName="name" />
+            <button (click)="AddFriend()">send fiend</button>
+        </form>
+
+        <div class="friends-list">
+            <h3>friends list - ngrx shared</h3>
+            <ul>
+                <li *ngFor="let friend of friends | async; let i=index" (click)="removeFriend(i)">{{friend.name}}
+                </li>
+            </ul>
+        </div>
+        <wc-child></wc-child>
+
+        <lib-silly-component></lib-silly-component>
+    </div>
+
+</div>
+
+
+

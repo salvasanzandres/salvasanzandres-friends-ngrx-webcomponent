@@ -1,0 +1,21 @@
+.container-wrap {
+    border: 3px solid rosybrown;
+    border-radius: 5px;
+
+    .title {
+        background-color: rosybrown;
+        color: white;
+        margin: 0;
+    }
+
+    .content {
+        padding: 20px;
+        color: rosybrown;
+        h3 {
+            text-decoration: underline;
+        }
+        .friends-list {
+            min-height: 50px;
+        }
+    }
+}

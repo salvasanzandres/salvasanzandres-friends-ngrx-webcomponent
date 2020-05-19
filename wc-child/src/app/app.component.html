@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 class="title">web component hosted</h2>
+
+    <div class="content">
+        <form  [formGroup]="friendForm">
+            <input type="text" formControlName="name" />
+            <button (click)="AddFriend()">add fiend</button>
+        </form>
+        <div class="friends-list">
+            <h3>friends list - ngrx shared</h3>
+            <ul  class="customers">
+                <li *ngFor="let friend of friendData; let i=index" (click)="removeFriend(i)">{{friend.name}}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
